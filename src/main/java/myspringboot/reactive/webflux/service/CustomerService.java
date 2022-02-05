@@ -19,6 +19,7 @@ public class CustomerService {
         List<Customer> customerList = customerDao.getCustomers();
         long end = System.currentTimeMillis();
         System.out.println("Total Execution Time = " + (end - start) + "ms");
+        System.out.println("전체 실행시간 = " + (end - start) + "ms");
 
         return customerList;
     }
